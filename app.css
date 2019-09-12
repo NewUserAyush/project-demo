@@ -1,0 +1,99 @@
+.card{
+    height: 10em;
+    width: 10em;
+    /* border: 1px solid black; */
+    padding: 1em;
+    margin: 1em;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #d3d3d363;
+}
+.card:hover{
+    border: 1px solid gray;
+}
+.image{
+    height: 5em;
+    width: 5em;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.5em;
+    /* padding: 0 1em; */
+    margin: 0 0.8em;
+}
+.city-name{
+    margin-top: 0.5em;
+}
+
+.citys{
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3em;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    height: 2em;
+    outline: none;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-section{
+    display: flex;
+    justify-content: space-around;
+    width: 25em;
+}
+
+.hd-text{
+    width: 10em;
+}
+
+.one-way-text{
+    width:14em;
+}
+
+.root{
+    margin-top: 5em;
+}
+
+.root-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 650px) {
+    .card{
+        width: 9em;
+    }
+    .filter{
+        display: block;
+    }
+  }

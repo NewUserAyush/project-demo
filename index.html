@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Zoomcar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./app.css">
+    </head>
+    <body>
+            <div class="root-title">CITIES</div>
+        <div class="root">
+            <div class="flex filter">
+                <div><input type="text" placeholder="Search.."  onchange="filtercities(event)" onkeyup="filtercities(event)"></div>
+                <div class="checkbox-section">
+                    <div class="flex-center">
+                        <span class="hd-text">HD Enable</span>
+                        <input type="checkbox" id="hd" onclick="toggleHDEnable(event)">
+                    </div>
+                    <div class="flex-center">
+                        <span class="one-way-text">One Way Enable</span>
+                        <input type="checkbox" id="oneway" onclick="toggleOneWayEnable(event)">
+                    </div>
+                </div>
+            </div>
+            <div class="citys">
+                <div class="title">Popular</div>
+                <div class="parent" id="popular"></div>
+            </div>
+            <div class="citys">
+                <div class="title">Other</div>
+                <div class="parent" id="notpopular"></div>
+            </div>
+
+        </div>
+        <script src="./app.js" ></script>
+    </body>
+</html>
